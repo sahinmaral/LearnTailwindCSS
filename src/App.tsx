@@ -1,21 +1,23 @@
 import React from "react";
-import FlexExample from "./components/FlexExample";
-import GridsExample from "./components/GridsExample";
-import SpacesAndSizesExamples from "./components/SpacesAndSizesExamples";
-import TypographyExamples from "./components/TypographyExamples";
+import { Route, Routes } from "react-router-dom";
+import ExamplePage1 from "./components/ExamplePage1";
+import Homepage from "./components/Homepage";
 
-function App() {
+import Navbar from "./components/Navbar";
+
+const App: React.FunctionComponent = () => {
   return (
-    <div className="container">
-      <TypographyExamples />
-      <hr/>
-      <SpacesAndSizesExamples />
-      <hr/>
-      <FlexExample />
-      <hr />
-      <GridsExample />
-    </div>
+    <>
+      <Navbar />
+      <div className="container mb-5">
+        <Routes>
+          <Route path="/" element={<Homepage />} />
+          <Route path="/example-1" element={<ExamplePage1 />} />
+          <Route path="*" element={<div>Error</div>} />
+        </Routes>
+      </div>
+    </>
   );
-}
+};
 
 export default App;

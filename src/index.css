@@ -2,7 +2,7 @@
 @tailwind components;
 @tailwind utilities;
 
-@layer {
+/* @layer {
   @media (min-width: 576px) {
     .container,
     .container-sm {
@@ -22,4 +22,4 @@
     margin-right: auto;
     margin-left: auto;
   }
-}
+} */

@@ -1,6 +1,6 @@
 import React from "react";
 
-function SpacesAndSizesExamples() {
+const SpacesAndSizesExamples: React.FunctionComponent = () =>  {
   return (
     <div className="my-5">
       <div className="flex">

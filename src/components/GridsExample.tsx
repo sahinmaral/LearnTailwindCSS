@@ -1,6 +1,6 @@
 import React from "react";
 
-function GridsExample() {
+const GridsExample: React.FunctionComponent = () =>  {
   return (
     <div className="my-5">
       <h1 className="text-center">Grid Columns</h1>

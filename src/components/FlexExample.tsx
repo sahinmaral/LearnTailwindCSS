@@ -1,6 +1,6 @@
 import React from "react";
 
-function FlexExample() {
+const FlexExample: React.FunctionComponent = () =>  {
   return (
     <div className="my-5">
       <div>Header</div>

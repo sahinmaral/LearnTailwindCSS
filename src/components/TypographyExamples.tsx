@@ -1,6 +1,6 @@
 import React from "react";
 
-function TypographyExamples() {
+const TypographyExamples: React.FunctionComponent = () =>  {
   return (
     <div className="my-5">
       <h1 className="text-3xl font-bold text-sky-200 bg-metal">hello world</h1>
